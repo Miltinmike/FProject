@@ -1,4 +1,4 @@
-@import '/assets/css/composed.css';
+@import 'composed.css';
 .play-card .card-box{
     padding: 10px 15px 10px;
 }
@@ -227,4 +227,124 @@ body.log {
 }
 .social-links.login a:last-child{
     background: #d62d20;
+}
+.editor-icons i {
+    color: #3bafda;
+    padding: 0px 15px;
+    font-size: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.editor-icons i:hover{
+    color: #3bafda !important;
+    opacity: 1;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+.browse-icon {
+    position: absolute;
+    left: 43%;
+    text-align: center;
+    top: 10%;
+}
+.browse-icon i{
+    opacity: 0;
+    color: #3bafda !important;
+
+}
+.edit-image:hover .browse-icon i{
+    opacity: 1 !important;
+}
+.edit-image:hover img
+{
+    opacity: 0.5;
+}
+/*****************************************
+* Modal 
+******************************************/
+.modal-body .member-card {
+    background-color: #3bafda;
+    padding: 5px;
+    margin-bottom: 55px;
+}
+.modal-body .member-card .browse-icon {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 75%;
+}
+.modal-body .member-card .browse-icon i {
+    opacity: 1;
+    color: #3bafda !important;
+    background: rgba(239, 239, 239, 0.9);
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 2px 0px #827c7c;
+    font-size: 14px;
+}
+.modal-body .center-block {
+    margin: 0 auto 20px;
+    width: 17%;
+    position: relative;
+    top: 55px;
+}
+body.modal-open {
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+}
+.modal form input.form-control {
+    height: 45px;
+}
+.modal form label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+    padding-left: 10px;
+}
+.modal .modal-dialog .modal-content .modal-body {
+    padding:0;
+    overflow: scroll;
+}
+.modal .modal-dialog .modal-content{
+    padding: 0;
+}
+.form-body {
+    height: 400px;
+    overflow: scroll;
+}
+.share-link {
+    width: 100%;
+    margin: 0;
+    min-height: 70px;
+    padding: 20px 35px;
+    background: #f9f9f9;
+    overflow: hidden;
+    line-height: 1;
+}
+.share-info {
+    float: right;
+    width: 80%;
+}
+.share-link span:first-child {
+    padding-right: 10px;
+}
+.member-card > span i {
+    color: #fff !important;
+    padding: 10px;
+}
+.member-card > span:hover i{
+    opacity: 1 !important;
+    color: #fff !important;
+}
+.modal-footer button {
+    margin: 10px 20px;
+    padding: 10px 30px;
+}
+.hideInput {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
 }

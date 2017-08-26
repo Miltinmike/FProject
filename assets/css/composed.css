@@ -259,6 +259,9 @@
   padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
+.p-0{
+    padding: 0;
+}
 .hr {
   display: inline-block;
   border: 0;
@@ -271,14 +274,24 @@
 .title {
   font-weight: 300;
   line-height: 50px;
-  margin-top: 0px;
+  margin-top: 0;
 }
 .sub-title {
   color: #97a0af;
   margin-bottom: 50px;
 }
 .m-b-0 {
-  margin-bottom: 0px !important;
+  margin-bottom: 0 !important;
+}
+.m-t-0-b-20{
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.p-l-0{
+    padding-left: 0;
+}
+.p-r-0{
+    padding-right: 0;
 }
 .parallax {
   background-position: 0 0;
@@ -289,7 +302,87 @@
   background-attachment: fixed;
 }
 
+/*****************************************
+*  New Styles
+******************************************/
+.b-blue {
+    background: #3bafda;
+    color: #FFFFFF;
+}
+.input-group-addon:first-child {
+    border-right: 0;
+    padding: 8px 15px;
+    height: 37px !important;
+    position: relative;
+    top: -1px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+.input-35 {
+    height: 35px;
+}
+.browse-input a {
+    background: #337ab7;
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.browse-input input {
+    width: 70% !important;
+    float: left;
+    margin: 0 5px 0 0 !important;
+}
+.file-button input[type=file] {
+    opacity: 0;
+    margin: 0px !important;
+    position: absolute;
+    top: 0;
+    width: 44px !important;
+    left: 0;
+}
+.add-button {
+    position: relative;
+}
+.add-button i{
+    position: absolute;
+    font-size: 25px;
+    margin: 5px 10px;
+    color: #337ab7;
+    left: -10px;
+}
+.r-input input {
+    width: 30%;
+    margin: auto;
+}
+.w-large,
+.w-medium input,
+.w-small input {
+    margin-right: 0 !important;
+    padding: 0 5px;
+}
 
+.w-medium {
+    width: 100px;
+}
+
+.w-small {
+    width: 50px;
+}
+.w-small{
+    width: 55px;
+}
+.remove-button i {
+    margin: 0;
+}
+@media(max-width: 1000px){
+    .col-md-5.p-0{
+        padding: 0 10px !important;
+        margin: 5px 0 !important; 
+    }
+}
 /*======= FOOTER ======*/
 .footer .navbar-nav li a {
   background: transparent !important;

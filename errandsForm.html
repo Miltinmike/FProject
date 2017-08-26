@@ -206,13 +206,13 @@
                                 </div>
                                  <div class="tabs-vertical-env nav-tab-left navtab-custom pro-menu">
                                     <ul class="nav tabs-vertical">
-                                        <li class="active">
+                                        <li>
                                             <a href="" >Message</a>
                                         </li>
                                         <li>
                                             <a href="" >Project</a>
                                         </li>
-                                        <li>
+                                        <li class="active">
                                             <a href="errandsForm.html">Errands</a>
                                         </li>
                                         <li>
@@ -251,233 +251,248 @@
                     </div> <!-- end col -->
                     <!-- PROGRESSBAR WIZARD -->
                     <div class="col-lg-9 col-md-8">
-                        <div class="card-box p-b-0 p-t-0">
-                            <!-- <h4 class="text-dark  header-title m-t-0">Wizard With Progress Bar</h4>
-                            <p class="text-muted m-b-25 font-13">
-                                Same with basic wizard setup but with progress bar.
-                            </p> -->
-
-                            <div id="progressbarwizard" class="pull-in">
-                                <ul>
-                                    <li><a href="#account-2" data-toggle="tab">Basic Info</a></li>
-                                    <li><a href="#profile-tab-2" data-toggle="tab">Personal Details</a></li>
-                                    <li><a href="#finish-2" data-toggle="tab">Brief Info</a></li>
-                                </ul>
-
-                                <div class="tab-content bx-s-0 m-b-0">
-
-                                    <div id="bar" class="progress progress-striped active">
-                                        <div class="bar progress-bar progress-bar-primary"></div>
-                                    </div>
-
-                                    <div class="tab-pane p-t-10 fade" id="account-2">
-                                        <div class="row">
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Upload Pic</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="file">
-                                                </div>
+                        <h4 class="m-t-0-b-20">General Errand</h4>
+                        <div class="col-md-12 p-0">
+                            <section class="card-box panel panel-default panel-border">
+                                <div class="row">
+                                    <form action="">
+                                        <div class="form-group clearfix">
+                                            <label class="col-md-3 control-label " for="userName1">Category</label>
+                                            <div class="col-md-9">
+                                                <select class="form-control select2" id="categorySelect" data-placeholder="Choose...">
+                                                        <option value=""></option>
+                                                        <option value="hours">Purchase</option>
+                                                        <option value="days">Consultancy</option>
+                                                        <option value="month">Services</option>
+                                                        <option value="longTerm">Logistics</option>
+                                                        <option value="entireErrand">Employement</option>
+                                                </select>
                                             </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Username</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="text">
-                                                </div>
+                                        </div>
+                                        <div class="form-group clearfix">
+                                            <label class="col-md-3 control-label " for="userName1">Title</label>
+                                            <div class="col-md-9">
+                                                <input class="form-control required" id="userName1" name="userName" type="text">
                                             </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Surname</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Other Names</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Phone Number</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Address</label>
-                                                <div class="col-md-9">
-                                                    <textarea class="form-control" rows="3"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">City</label>
-                                                <div class="col-md-9">
-                                                    <select class="form-control select2">
-                                                        <option>Choose City</option>
-                                                            <option value="AK">Alaska</option>
-                                                            <option value="HI">Hawaii</option>
-                                                            <option value="CA">California</option>
-                                                            <option value="NV">Nevada</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="WA">Washington</option>
-                                                             <option value="AZ">Arizona</option>
-                                                            <option value="CO">Colorado</option>
-                                                            <option value="ID">Idaho</option>
-                                                            <option value="MT">Montana</option>
-                                                            <option value="NE">Nebraska</option>
-                                                            <option value="NM">New Mexico</option>
-                                                            <option value="ND">North Dakota</option>
-                                                            <option value="UT">Utah</option>
-                                                            <option value="WY">Wyoming</option>
+                                        </div>
+                                        <div class="form-group clearfix">
+                                            <label class="col-md-3 control-label " for="userName1">Duration</label>
+                                            <div class="col-md-9 p-0">
+                                                <div class="col-md-3">
+                                                    <select class="form-control select2" id="modeSelect" data-placeholder="Mode">
+                                                            <option value=""></option>
+                                                            <option value="hours">Hour</option>
+                                                            <option value="days">Day</option>
+                                                            <option value="month">Month</option>
+                                                            <option value="longTerm">Long Term</option>
+                                                            <option value="entireErrand">Entire Errand</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Country</label>
-                                                <div class="col-md-9">
-                                                    <select class="form-control select2">
-                                                        <option>Select Country</option>
-                                                            <option value="AK">Alaska</option>
-                                                            <option value="HI">Hawaii</option>
-                                                            <option value="CA">California</option>
-                                                            <option value="NV">Nevada</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="WA">Washington</option>
-                                                             <option value="AZ">Arizona</option>
-                                                            <option value="CO">Colorado</option>
-                                                            <option value="ID">Idaho</option>
-                                                            <option value="MT">Montana</option>
-                                                            <option value="NE">Nebraska</option>
-                                                            <option value="NM">New Mexico</option>
-                                                            <option value="ND">North Dakota</option>
-                                                            <option value="UT">Utah</option>
-                                                            <option value="WY">Wyoming</option>
-                                                    </select>
+                                                <div class="col-md-9 p-0">
+                                                    <div class="col-md-12 p-0 hidden" id="duration-hoursSelect">
+                                                        <div class="col-md-5 p-0">
+                                                            <select class="form-control select2" data-placeholder="Choose...">
+                                                                <option value=""></option>
+                                                                <option value="1-2">1-2 hours</option>
+                                                                <option value="3-4">3-4 hours</option>
+                                                                <option value="5-6">5-6 hours</option>
+                                                                <option value="7-8">7-8 hours</option>
+                                                                <option value="9-10">9-10 hours</option>
+                                                                <option value="11-12">11-12 hours</option>
+                                                                <option value="13-14">13-14 hours</option>
+                                                                <option value="15-16">15-16 hours</option>
+                                                                <option value="17-18">17-18 hours</option>
+                                                                <option value="19-20">19-20 hours</option>
+                                                                <option value="21-22">21-22 hours</option>
+                                                                <option value="23-24">23-24 hours</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-7" id="monthSelect">
+                                                            <div class="input-group">
+                                                                <div class="bootstrap-timepicker">
+                                                                    <input id="timepicker" type="text" class="form-control" placeholder="from">
+                                                                </div>
+                                                                <span class="input-group-addon bg-primary b-0 text-white"><i class="glyphicon glyphicon-time"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 p-0 hidden" id="duration-daysSelect">
+                                                        <div class="col-md-5 p-0">
+                                                            <input type="text" class="form-control" placeholder="No of Days">
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="input-daterange input-group" id="date-range">
+                                                                <input type="text" class="form-control" name="start" placeholder="Start" />
+                                                                <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                                <input type="text" class="form-control" name="end" placeholder="End" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 p-0 hidden" id="duration-monthsSelect">
+                                                        <div class="col-md-5 p-0">
+                                                            <input type="text" class="form-control" placeholder="No of Months">
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="input-daterange input-group" id="date-range5">
+                                                                <input type="text" class="form-control" name="start" placeholder="Start" />
+                                                                <span class="input-group-addon bg-primary b-0 text-white">to</span>
+                                                                <input type="text" class="form-control" name="end" placeholder="End"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 p-0" id="disable-hoursSelect">
+                                                        <div class="col-md-5 p-0">
+                                                            <select class="form-control select2" data-placeholder="Choose..." disabled>
+                                                                <option value=""></option>
+                                                                <option value="1-2">1-2 hours</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <div class="input-group">
+                                                                <div class="bootstrap-timepicker">
+                                                                    <input id="timepicker" type="text" class="form-control" placeholder="from" disabled>
+                                                                </div>
+                                                                <span class="input-group-addon bg-primary b-0 text-white"><i class="glyphicon glyphicon-time"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane p-t-10 fade" id="profile-tab-2">
-                                        <div class="row">
-                                            <form action="">
-                                                 <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Area of Interest</label>
-                                                <div class="col-md-9">
-                                                    <select class="select2 select2-multiple" multiple="multiple" multiple data-placeholder="Choose ...">
+                                        <div class="form-group clearfix">
+                                            <label class="col-md-3 control-label " for="userName1">Pay</label>
+                                            <div class="col-md-9 p-0">
+                                                <div class="col-md-3">
+                                                    <select class="form-control select2" id="paySelect" data-placeholder="Choose...">
                                                         <option>Choose</option>
-                                                            <option value="AK">Painting</option>
-                                                            <option value="HI">Cleaning</option>
-                                                            <option value="CA">Development</option>
-                                                            <option value="NV">Crafting</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="WA">Washington</option>
-                                                             <option value="AZ">Arizona</option>
-                                                            <option value="CO">Colorado</option>
-                                                            <option value="ID">Idaho</option>
-                                                            <option value="MT">Montana</option>
-                                                            <option value="NE">Nebraska</option>
-                                                            <option value="NM">New Mexico</option>
-                                                            <option value="ND">North Dakota</option>
-                                                            <option value="UT">Utah</option>
-                                                            <option value="WY">Wyoming</option>
+                                                            <option value="AK">Hour</option>
+                                                            <option value="HI">Days</option>
+                                                            <option value="CA">Month</option>
+                                                            <option value="NV">Long Term</option>
+                                                            <option value="OR">Entire Errand</option>
                                                     </select>
                                                 </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Education</label>
-                                                <div class="col-md-9">
-                                                    <input class="form-control required" id="userName1" name="userName" type="text">
+                                                <div class="col-md-5 p-0">
+                                                    <div class="col-md-12 p-0" id="hoursSelect">
+                                                        <input type="text" class="form-control" placeholder="Number">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Skills</label>
-                                                <div class="col-md-9">
-                                                    <div class="tags-default">
-                                                        <input type="text" value="JavaScript,Angular" data-role="tagsinput" placeholder="add tags"/>
+                                                <div class="col-md-4">
+                                                    <div class="input-group">
+                                                        <span class="input-group-addon b-blue"><i class="fa fa-dollar"></i></span>
+                                                        <input type="text" id="" name="" class="form-control input-35" placeholder="">
+                                                        <!-- <span class="input-group-addon">.00</span> -->
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Introduction</label>
-                                                <div class="col-md-9">
-                                                    <textarea class="form-control" rows="3"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="form-group clearfix">
-                                                <label class="col-md-3 control-label " for="userName1">Certifications</label>
-                                                <div class="col-md-9">
-                                                    <select class="form-control select2">
-                                                        <option>Choose City</option>
-                                                            <option value="AK">Alaska</option>
-                                                            <option value="HI">Hawaii</option>
-                                                            <option value="CA">California</option>
-                                                            <option value="NV">Nevada</option>
-                                                            <option value="OR">Oregon</option>
-                                                            <option value="WA">Washington</option>
-                                                             <option value="AZ">Arizona</option>
-                                                            <option value="CO">Colorado</option>
-                                                            <option value="ID">Idaho</option>
-                                                            <option value="MT">Montana</option>
-                                                            <option value="NE">Nebraska</option>
-                                                            <option value="NM">New Mexico</option>
-                                                            <option value="ND">North Dakota</option>
-                                                            <option value="UT">Utah</option>
-                                                            <option value="WY">Wyoming</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            </form>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane p-t-10 fade" id="finish-2">
-                                        <div class="row">
-                                           <form action="">
-                                                <div class="form-group clearfix">
-                                                    <label class="col-md-3 control-label " for="userName1">Brief Introduction</label>
-                                                    <div class="col-md-9">
-                                                        <textarea class="form-control" rows="5" placeholder="Brief introduction not more than 500 words"></textarea>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group clearfix">
-                                                    <label class="col-md-3 control-label " for="userName1">Upload Gallery</label>
-                                                    <div class="col-md-9">
-                                                    <div class="portlets">
-                                                        <!-- Your awesome content goes here -->
-                                                        <div class="m-b-30">
-                                                            <div class="dropzone" id="dropzone">
-                                                            <div class="fallback">
-                                                                <input name="file" type="file" multiple />
-                                                            </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group clearfix">
-                                                    <div class="col-md-9 pull-right">
-                                                        <div class="checkbox checkbox-primary">
-                                                            <input id="checkbox-h1" type="checkbox">
-                                                            <label for="checkbox-h1">
-                                                                I agree with the Terms and Conditions.
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                           </form>
+                                        <div class="form-group clearfix">
+                                            <label class="col-md-3 control-label " for="userName1">Description</label>
+                                            <div class="col-md-9">
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
                                         </div>
+                                    </form>
+                                </div>
+                            </section>
+                            <section class="col-md-12 p-0">
+                                <div class="card-box panel panel-default panel-border">
+                                        <section class="row">
+                                            <div class="col-md-12 p-0">
+                                                <form action="">
+                                                    <table class="table m-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>#</th>
+                                                                <th>Product Name</th>
+                                                                <th>Unit Price</th>
+                                                                <th>Qty</th>
+                                                                <th>P/p</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Product Name</td>
+                                                                <td>200</td>
+                                                                <td>5</td>
+                                                                <td>1000</td>
+                                                                <td>
+                                                                    <a href=""><span class="add-button remove-button"><i class=" md-remove-circle"></i></span></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row"></th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td><strong class="m-t-b-20">Total</strong></td>
+                                                                <td><strong class="m-t-b-20">1,000</strong></td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </form>
+                                            </div>
+                                        </section>
                                     </div>
-                                    <ul class="pager m-b-0 wizard">
-                                        <li class="previous first" style="display:none;"><a href="#">First</a>
-                                        </li>
-                                        <li class="previous"><a href="#" class="btn btn-primary waves-effect waves-light">Previous</a></li>
-                                        <li class="next last" style="display:none;"><a href="#">Last</a></li>
-                                        <li class="next"><a href="#" class="btn btn-primary waves-effect waves-light">Next</a></li>
-                                    </ul>
+                            </section>
+                        </div>
+                        
+                        <h4>Category Input</h4>
+                        <section class="card-box panel panel-default panel-border t-content">
+                            <div class="row">
+                                <div class="col-md-12 p-0">
+                                    <h5 class="text-muted"><small>Upload a link to product image for clarity.</small></h5>
+                                    <form action="">
+                                        <div class="col-md-12 p-0">
+                                            <table class="table m-t-b-20">
+                                                <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Product Name</th>
+                                                        <th>Unit Price</th>
+                                                        <th>Qty</th>
+                                                        <th>Receipt</th>
+                                                        <th>Image</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">1</th>
+                                                        <td>
+                                                            <div class="w-large">
+                                                                <input class="form-control required" type="text">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="w-medium">
+                                                                <input class="form-control required" type="text">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="w-small">
+                                                                <input class="form-control required" type="text">
+                                                            </div>
+                                                        </td>
+                                                        <td><div class="r-input"><input class="form-control" type="checkbox"></div></td>
+                                                        <td>
+                                                            <div class="browse-input">
+                                                                <a class="file-button" id="Upload-errand"><i class=" md-image"></i><input type="file" class="form-control" ></a>
+                                                                <input class="form-control m-t-10 required" id="errand-image" type="text" placeholder="Url">
+                                                                <a href=""><span class="add-button"><i class="md-add-circle"></i></span></a>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="form-group m-t-b-30 col-md-12">
+                                            <button class="btn btn-primary pull-right">Send Errand</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                    
-                        </div>
+                        </section>
                     </div>
                     <!-- end col -->
                 </div>
@@ -593,6 +608,8 @@
 
         <!-- File upload   -->
         <script src="plugins/dropzone/dist/dropzone.js"></script>
+        <script src="assets/js/dated.js"></script>
+        <script src="assets/js/script.js"></script>
         <!-- Others   -->
         <script type="text/javascript">
             $(document).ready(function() {
@@ -638,8 +655,31 @@
                     }
                 });
             });
-            $(".select2").select2();
+          //  $(".select2").select2();
+            $(function(){
+                // turn the element to select2 select style
+                $('.select2#durationSelect,.select2#modeSelect,.select2#paySelect').select2({
+                placeholder: "Select a state"
+                });
 
+                $('.select2#modeSelect').on('change', function() {
+                    var data = $(".select2#modeSelect option:selected").text();
+                    if( data === 'Hour'){
+                        $('#duration-hoursSelect').removeClass('hidden');
+                        $('#duration-daysSelect,#duration-monthsSelect,#disable-hoursSelect').addClass('hidden');
+                    }else if( data === 'Day'){
+                        $('#duration-hoursSelect,#duration-monthsSelect,#disable-hoursSelect').addClass('hidden');
+                        $('#duration-daysSelect').removeClass('hidden');
+                    }
+                    else if( data == 'Month'){
+                        $('#duration-daysSelect,#duration-hoursSelect,#disable-hoursSelect').addClass('hidden');
+                        $('#duration-monthsSelect').removeClass('hidden');
+                    }else if( data === ''){
+                        $('#disable-hoursSelect').removeClass('hidden');
+                    }
+                   // $("#test").val(data);
+                })
+            });
         </script>
 
 
